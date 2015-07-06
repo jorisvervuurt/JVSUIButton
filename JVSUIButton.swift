@@ -52,8 +52,8 @@ class JVSUIButton: UIButton {
 		} else {
 			let initialBounds: CGRect = self.bounds
 			let additionalHitTargetWidth: CGFloat = self.bounds.width < self.minimumHitTargetWidth ? self.minimumHitTargetWidth - self.bounds.width : 0
-			let additionalHitAreaHeight: CGFloat = self.bounds.height < self.minimumHitTargetHeight ? self.minimumHitTargetHeight - self.bounds.height : 0
-			let extendedBounds: CGRect = CGRectInset(self.bounds, -(additionalHitTargetWidth / 2), -(additionalHitAreaHeight / 2))
+			let additionalHitTargetHeight: CGFloat = self.bounds.height < self.minimumHitTargetHeight ? self.minimumHitTargetHeight - self.bounds.height : 0
+			let extendedBounds: CGRect = CGRectInset(self.bounds, -(additionalHitTargetWidth / 2), -(additionalHitTargetHeight / 2))
 			
 			return CGRectContainsPoint(extendedBounds, point)
 		}
