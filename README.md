@@ -1,7 +1,7 @@
 # JVSUIButton
-A subclass of UIButton, adding the ability to set a minimum hit target size.
+A subclass of UIButton written in Swift, adding the ability to set a minimum hit target size.
 
-In the [Adaptivity and Layout chapter of the iOS Human Interface Guidelines](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LayoutandAppearance.html), Apple states that it is recommended to give tappable controls a hit target of about 44 x 44 points. When you use a UIButton that is smaller than the recommended size, JVSUIButton allows you to specify a hit target that is larger than the button itself.
+In the [Adaptivity and Layout chapter of the iOS Human Interface Guidelines](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LayoutandAppearance.html), Apple states that it is recommended to give tappable controls a hit target of about 44 x 44 points. When you use a UIButton that is smaller than the recommended hit target, JVSUIButton allows you to specify a hit target that is larger than the button itself.
 
 ## Usage
 Simply drag a UIButton onto your view and set it's class to JVSUIButton, or programmatically add it as a subview.
